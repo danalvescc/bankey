@@ -13,16 +13,30 @@ class OnboardingViewController: UIViewController {
     let imageView = UIImageView()
     let titleLabel = UILabel()
     
+    let heroImageName: String
+    let titleText: String
+    
     override func viewDidLoad(){
         super.viewDidLoad()
         style()
         layout()
     }
+    
+    init(heroImageName: String, titleText: String){
+        self.heroImageName = heroImageName
+        self.titleText = titleText
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
 extension OnboardingViewController {
     func style(){
-        stackView.backgroundColor = .systemGray
+        view.backgroundColor = .systemBackground
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
@@ -31,7 +45,7 @@ extension OnboardingViewController {
         //Image
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
-        imageView.image = UIImage(named: "delorean")
+        imageView.image = UIImage(named: heroImageName)
         
         // Label
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -39,7 +53,7 @@ extension OnboardingViewController {
         titleLabel.font = UIFont.preferredFont(forTextStyle: .title3)
         titleLabel.adjustsFontForContentSizeCategory = true
         titleLabel.numberOfLines = 0
-        titleLabel.text = "Teste do teste do teste"
+        titleLabel.text = titleText
     }
     
     func layout(){
