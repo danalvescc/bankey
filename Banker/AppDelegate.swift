@@ -7,13 +7,14 @@
 
 import UIKit
 
+let appColor: UIColor = .systemTeal
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var loginViewController = LoginViewController()
     var onboardingContainerViewController = OnboardingContainerViewController()
-    var dummyContainerViewController = DummyViewController()
+    var mainViewController = MainViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -21,9 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .systemBackground
         loginViewController.delegate = self
         onboardingContainerViewController.delegate = self
-        dummyContainerViewController.logoutDelegate = self
         
-        window?.rootViewController = loginViewController
+        window?.rootViewController = mainViewController
         
         return true
     }
@@ -51,7 +51,7 @@ extension AppDelegate {
 extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
         if LocalState.hasOnboarded {
-            setRootViewController(dummyContainerViewController)
+            setRootViewController(mainViewController)
         } else {
             setRootViewController(onboardingContainerViewController)
         }
@@ -61,7 +61,7 @@ extension AppDelegate: LoginViewControllerDelegate {
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         LocalState.hasOnboarded = true
-        setRootViewController(dummyContainerViewController)
+        setRootViewController(mainViewController)
     }
 }
 
