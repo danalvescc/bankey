@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F440C92B2924384E00411D0B /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F440C92A2924384E00411D0B /* AccountSummaryViewController.swift */; };
 		F442504D287CFD9B00003818 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F442504C287CFD9B00003818 /* LoginView.swift */; };
 		F4536B08291B1C20000BF752 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4536B07291B1C20000BF752 /* LocalState.swift */; };
 		F4536B0B291C8A9D000BF752 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4536B0A291C8A9D000BF752 /* MainViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F440C92A2924384E00411D0B /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		F442504C287CFD9B00003818 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F4536B07291B1C20000BF752 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		F4536B0A291C8A9D000BF752 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F440C9292924382800411D0B /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				F440C92A2924384E00411D0B /* AccountSummaryViewController.swift */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
 		F442504A287CFD0000003818 /* Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,12 +153,13 @@
 		F4E32A45287CF9040002AB0F /* Banker */ = {
 			isa = PBXGroup;
 			children = (
+				F440C9292924382800411D0B /* AccountSummary */,
 				F4E32A46287CF9040002AB0F /* AppDelegate.swift */,
-				F4536B06291B1C12000BF752 /* Util */,
+				F4536B09291C8A8F000BF752 /* Main */,
 				F4F0C89328AC47A50083CEF4 /* Onboarding */,
 				F442504B287CFD6F00003818 /* Login */,
+				F4536B06291B1C12000BF752 /* Util */,
 				F442504A287CFD0000003818 /* Files */,
-				F4536B09291C8A8F000BF752 /* Main */,
 			);
 			path = Banker;
 			sourceTree = "<group>";
@@ -317,6 +328,7 @@
 				F4536B0B291C8A9D000BF752 /* MainViewController.swift in Sources */,
 				F4E32A4B287CF9040002AB0F /* LoginViewController.swift in Sources */,
 				F4E32A47287CF9040002AB0F /* AppDelegate.swift in Sources */,
+				F440C92B2924384E00411D0B /* AccountSummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
