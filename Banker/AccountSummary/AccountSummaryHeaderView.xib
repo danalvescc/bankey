@@ -18,15 +18,69 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="393" height="144"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sbq-Jd-Fld">
+                    <rect key="frame" x="16" y="16" width="361" height="112"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dLN-98-8Zd">
+                            <rect key="frame" x="0.0" y="0.0" width="257" height="112"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Bankey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vnO-hX-7SY">
+                                    <rect key="frame" x="0.0" y="0.0" width="257" height="39"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" text="Good morning," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxM-Xz-Sgg">
+                                    <rect key="frame" x="0.0" y="43" width="257" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" text="Jonathan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbc-Ai-oC1">
+                                    <rect key="frame" x="0.0" y="67.333333333333329" width="257" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzl-Ys-ROc">
+                                    <rect key="frame" x="0.0" y="91.666666666666671" width="257" height="20.333333333333329"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kyj-v0-OC1">
+                            <rect key="frame" x="261" y="0.0" width="100" height="112"/>
+                            <color key="tintColor" systemColor="systemYellowColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Gxb-rL-vdH"/>
+                                <constraint firstAttribute="height" constant="100" id="Noh-w5-bd7"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                </stackView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sbq-Jd-Fld" secondAttribute="bottom" constant="16" id="A1L-t7-Fx4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sbq-Jd-Fld" secondAttribute="trailing" priority="999" constant="16" id="aNg-8l-WuA"/>
+                <constraint firstItem="sbq-Jd-Fld" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="j16-pd-I64"/>
+                <constraint firstItem="sbq-Jd-Fld" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="j6j-da-8H5"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="131" y="-11"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>
+        <image name="sun.max.fill" catalog="system" width="128" height="125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
