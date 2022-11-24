@@ -52,7 +52,7 @@ class AccountSummaryCell: UITableViewCell {
     
     private lazy var balanceAmountLabel: UILabel = {
         var label = UILabel()
-        label.text = "$924.123,00"
+        label.attributedText = makeFormattedBalance(dollars: "900,000", cents: "20")
         return label
     }()
     
@@ -65,7 +65,7 @@ class AccountSummaryCell: UITableViewCell {
     }()
     
     static var reuseID = "AccountSummaryCell"
-    static var rowHeight: CGFloat = 100
+    static var rowHeight: CGFloat = 112
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -111,5 +111,19 @@ extension AccountSummaryCell {
             trailingAnchor.constraint(equalToSystemSpacingAfter: chevronImageView.trailingAnchor, multiplier: 1),
             chevronImageView.topAnchor.constraint(equalToSystemSpacingBelow: underlineView.bottomAnchor, multiplier: 1)
         ])
+    }
+}
+
+extension AccountSummaryCell {
+    private func makeFormattedBalance(dollars: String, cents: String) -> NSMutableAttributedString {
+        let dollarSignAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .callout), .baselineOffset: 8]
+        let dollarAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .title1)]
+        let centsAttributes: [NSAttributedString.Key: Any] = [.font: UIFont.preferredFont(forTextStyle: .footnote), .baselineOffset: 8]
+        
+        let rootString = NSMutableAttributedString(string: "$", attributes: dollarSignAttributes)
+        rootString.append(NSAttributedString(string: dollars, attributes: dollarAttributes))
+        rootString.append(NSAttributedString(string: cents, attributes: centsAttributes))
+        
+        return rootString
     }
 }
