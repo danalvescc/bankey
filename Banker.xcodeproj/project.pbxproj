@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F435E1C3293043BE00E4C792 /* DecimalUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E1C2293043BE00E4C792 /* DecimalUtil.swift */; };
+		F435E1C52930444F00E4C792 /* CurencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F435E1C42930444F00E4C792 /* CurencyFormatter.swift */; };
 		F440C92B2924384E00411D0B /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F440C92A2924384E00411D0B /* AccountSummaryViewController.swift */; };
 		F440C92D29243FDA00411D0B /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F440C92C29243FDA00411D0B /* AccountSummaryHeaderView.swift */; };
 		F440C92F2924400700411D0B /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F440C92E2924400700411D0B /* AccountSummaryHeaderView.xib */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F435E1C2293043BE00E4C792 /* DecimalUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtil.swift; sourceTree = "<group>"; };
+		F435E1C42930444F00E4C792 /* CurencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurencyFormatter.swift; sourceTree = "<group>"; };
 		F440C92A2924384E00411D0B /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		F440C92C29243FDA00411D0B /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		F440C92E2924400700411D0B /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
@@ -125,7 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				F4536B07291B1C20000BF752 /* LocalState.swift */,
+				F435E1C42930444F00E4C792 /* CurencyFormatter.swift */,
 				F4536B0C291C8BE5000BF752 /* UIViewController+Utils.swift */,
+				F435E1C2293043BE00E4C792 /* DecimalUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -347,7 +353,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F440C92D29243FDA00411D0B /* AccountSummaryHeaderView.swift in Sources */,
+				F435E1C3293043BE00E4C792 /* DecimalUtil.swift in Sources */,
 				F4FC44C8292C33CA001AD0BE /* AccountSummaryCell.swift in Sources */,
+				F435E1C52930444F00E4C792 /* CurencyFormatter.swift in Sources */,
 				F4536B0D291C8BE5000BF752 /* UIViewController+Utils.swift in Sources */,
 				F442504D287CFD9B00003818 /* LoginView.swift in Sources */,
 				F4536B08291B1C20000BF752 /* LocalState.swift in Sources */,
