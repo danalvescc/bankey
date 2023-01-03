@@ -66,7 +66,7 @@ class AccountSummaryCell: UITableViewCell {
         label.font = UIFont.preferredFont(forTextStyle: .body)
         label.textAlignment = .right
         label.adjustsFontSizeToFitWidth = true
-        label.text = "Some Label"
+        label.text = "Some Label"  
         return label
     }()
     
