@@ -17,6 +17,7 @@ class AccountSummaryViewController: UIViewController {
     var headerViewModel = AccountSummaryHeaderView.ViewModel(welcomeLabel: "Welcome", name: "", date: Date())
     var accountCellViewModels: [AccountSummaryCell.ViewModel] = []
 
+    var refreshControl = UIRefreshControl()
     var tableView = UITableView()
     let headerView = AccountSummaryHeaderView(frame: .zero)
     
@@ -36,6 +37,7 @@ extension AccountSummaryViewController {
     private func setup() {
         setupTableView()
         setupTableHeaderView()
+        setupRefreshControl()
         setupNavigationBar()
         fetchData()
     }
@@ -70,6 +72,12 @@ extension AccountSummaryViewController {
         
         tableView.tableHeaderView = headerView
     }
+    
+    private func setupRefreshControl(){
+        refreshControl.tintColor = appColor
+        refreshControl.addTarget(self, action: #selector(refreshContent), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+    }
 }
 
 extension AccountSummaryViewController: UITableViewDataSource {
@@ -98,6 +106,10 @@ extension AccountSummaryViewController: UITableViewDelegate {
 extension AccountSummaryViewController {
     @objc func logoutTapped(sender: UIButton){
         NotificationCenter.default.post(name: .logout, object: nil)
+    }
+    
+    @objc func refreshContent() {
+        fetchData()
     }
 }
 
@@ -132,6 +144,7 @@ extension AccountSummaryViewController {
         
         group.notify(queue: .main) {
             self.tableView.reloadData()
+            self.tableView.refreshControl?.endRefreshing()
         }
     }
     
