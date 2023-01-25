@@ -23,6 +23,8 @@
 		F47283D02915572A009333B0 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47283CF2915572A009333B0 /* OnboardingViewController.swift */; };
 		F4A73F00294A2451007B7255 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A73EFF294A2451007B7255 /* NSNotificationName.swift */; };
 		F4A73F02294A2834007B7255 /* UITextField+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A73F01294A2834007B7255 /* UITextField+Utils.swift */; };
+		F4C559B42980BB81000DDBBB /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C559B32980BB81000DDBBB /* SkeletonLoadable.swift */; };
+		F4C559B62980BCB8000DDBBB /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C559B52980BCB8000DDBBB /* SkeletonCell.swift */; };
 		F4CE01CC297835370016AAD2 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE01CB297835370016AAD2 /* Date+Utils.swift */; };
 		F4CE01CE297839DD0016AAD2 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CE01CD297839DD0016AAD2 /* AccountSummaryViewController+Networking.swift */; };
 		F4D9477A2964E441004F326E /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D947792964E441004F326E /* ShakeyBellView.swift */; };
@@ -62,6 +64,8 @@
 		F47283CF2915572A009333B0 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		F4A73EFF294A2451007B7255 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		F4A73F01294A2834007B7255 /* UITextField+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Utils.swift"; sourceTree = "<group>"; };
+		F4C559B32980BB81000DDBBB /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
+		F4C559B52980BCB8000DDBBB /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		F4CE01CB297835370016AAD2 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
 		F4CE01CD297839DD0016AAD2 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		F4D947792964E441004F326E /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				F4FC44C7292C33CA001AD0BE /* AccountSummaryCell.swift */,
+				F4C559B32980BB81000DDBBB /* SkeletonLoadable.swift */,
+				F4C559B52980BCB8000DDBBB /* SkeletonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -361,6 +367,8 @@
 				F4CE01CE297839DD0016AAD2 /* AccountSummaryViewController+Networking.swift in Sources */,
 				F442504D287CFD9B00003818 /* LoginView.swift in Sources */,
 				F4536B08291B1C20000BF752 /* LocalState.swift in Sources */,
+				F4C559B62980BCB8000DDBBB /* SkeletonCell.swift in Sources */,
+				F4C559B42980BB81000DDBBB /* SkeletonLoadable.swift in Sources */,
 				F4F0C89528AC47B00083CEF4 /* OnboardingContainerViewController.swift in Sources */,
 				F4A73F00294A2451007B7255 /* NSNotificationName.swift in Sources */,
 				F47283D02915572A009333B0 /* OnboardingViewController.swift in Sources */,
